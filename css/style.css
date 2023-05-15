@@ -1,0 +1,307 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Oswald';
+}
+@font-family: 'Oswald', sans-serif;
+
+#body-index {
+    height: 100vh;
+    background-image: url(../media/bandaenvivo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 4, 1fr;
+    grid-template-rows: 4, 1fr;
+    grid-template-areas: 
+        'header' 'header' 'header' 'header'
+        'main ul' 'main ul' 'footer'
+    ;
+
+    
+}
+
+header { 
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-area: 'header';
+}
+main ul{
+    padding: 10%;
+    margin: 10px;
+    font-size: 30px;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-area: 'main ul';
+    
+    
+}
+
+main li{
+    color: antiquewhite;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+footer {
+    grid-area: '';
+}
+
+
+.main-title-event {
+    font-family: 'Oswald';
+    font-size: 80px;
+    color: #EAD94C;
+    display: flex;
+    justify-content: center;
+}
+
+.main-data {
+    margin: 50px;
+    padding: 50px;
+    font-size: 40px;
+    color: #EAD94C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align:end;
+
+}
+
+#body-disco {
+    background-color: #384E77;
+}
+
+main h1{
+    font-size: 100px;
+    color: #E6F9AF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.disco-title {
+    font-size: 20px;
+    color: #E6F9AF;
+
+}
+.main-section-spotify{
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+#contact-body {
+    height: 100vh;
+    background-color: #F5D547;
+}
+.main-contact-menu {
+    text-align: center;
+    text-shadow: #384E77;
+}
+.main-redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#footer-event{
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.mb-3 {
+    width: 200px;
+}
+.btn-submit {
+    width: 100px;
+    color: #384E77;
+}
+.main-redes-container {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 20%;
+}
+.footer-contact-comment {
+    font-family: 'Oswald';
+    font-size: larger;
+    color: #384E77;
+
+}
+#footer-contact {
+    margin-top: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#event-body {
+    height: 80vh;
+    background-color: #E6F9AF;
+    grid-template-columns: 3, 3fr;
+    grid-template-rows: 3, 1fr;
+}
+
+
+
+.carousel-inner {
+    padding: 10%;
+    height: 900px;
+}
+
+#event-header  h1 {
+    height: 20vh;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Oswald';
+    font-size: 120px;
+    grid-area: 'header-event';
+}
+.form-title h2 {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#body-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 600px 600px;
+    grid-template-areas: 
+        'header' 'header' 
+        'main' 'footer'
+    ;
+    
+}
+@media(max-width: 576px) {
+    h1 {
+        font-size: 50px ;
+        margin: 50px;
+        padding: 20px;
+
+    }
+    main li {
+        color: #EAD94C;
+        
+    }
+    main ul{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .main-data {
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        text-align:end;
+    
+    }
+    .main-redes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center
+    }
+    .main-contact-menu h1 {
+        padding: 0%;
+        font-size: 70px;
+        text-align: center;
+        text-shadow: #384E77;
+    }
+    .main-section-spotify{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: flex-end
+     
+    }
+    #event-header  h1 {
+    font-size: 30px;
+   
+    }
+
+
+    #header-bio {
+        grid-area: 'header';
+    }
+    .main-h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-sec-first {
+        display: flex;
+        justify-content: center;
+    }
+    #bio-header {
+        color: #E6F9AF;
+        font-size: 50px;
+        margin: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    #bio-body {
+        background-color: #384E77;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 3, 3fr;
+        grid-template-rows: 2, 3fr ;
+        
+    }
+    h2 {
+        color: #E6F9AF;
+        display: flex;
+    }
+    .card {
+        display: flex;
+        flex-direction: row;
+        grid-area: 'card';
+    }
+    .card-text {
+        padding: 10px;
+        color: #EAD94C;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-content: last baseline;
+        grid-area: 'text';
+    }
+    .card-img-top {
+        
+        width: 200%;
+    }
+}
+#bio-body {
+    background-color: #E6F9AF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
