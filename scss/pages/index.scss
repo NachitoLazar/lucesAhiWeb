@@ -1,0 +1,90 @@
+#body-index {
+    height: 100vh;
+    background-image: url(../media/WhatsApp\ Image\ 2023-05-27\ at\ 23.27.52.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 4, 1fr;
+    grid-template-rows: 4, 1fr;
+    grid-template-areas: 
+        'header' 'header' 'header' 'header'
+        'main ul' 'main ul' 'footer'
+    ;
+  }
+#header-index{
+        .main-title h1 {
+            font-family: 'Oswald';
+            font-size: 130px;
+            color: $color-primario;
+            display: flex;
+            justify-content: center;
+            &:hover {
+                color: blueviolet;
+            }
+        }
+
+    }
+main {
+    h1 {
+        font-size: 300px;
+    }
+    ul{
+        padding: 10%;
+        margin: 10px;
+        font-size: 30px;
+        list-style-type: none;
+        text-decoration: none;
+        color: antiquewhite;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        grid-area: 'main ul';
+    }
+    li{
+        color: antiquewhite;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: flex-end;
+    }
+        .main-data {
+            margin: 50px;
+            padding: 50px;
+            font-size: 40px;
+            color: $color-primario;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align:end;
+
+        
+        }
+}
+
+#indexFooter {
+    margin: 50px;
+    padding: 50px;
+    font-size: 40px;
+    color: $color-primario;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:end;
+}
+@media (max-width: 576px) {
+    #body-index {
+        background-repeat: repeat-y;
+        text-align: center;
+    }
+    main {
+        li{
+            flex-direction: column;
+            justify-content: center;
+            align-content: flex-end;
+        }
+    }
+    .main-data {
+        font-size: 1000px;
+    }
+}

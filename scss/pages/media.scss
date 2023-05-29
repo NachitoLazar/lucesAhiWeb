@@ -1,0 +1,126 @@
+@media(max-width: 576px) {
+    #body-index {
+        background-size:contain;
+    }
+    h1 {
+        font-size: 50px ;
+        margin: 50px;
+        padding: 20px;
+
+    }
+    main li {
+        color: $color-primario;
+        
+    }
+    main ul{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .main-data {
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        text-align:end;
+    
+    }
+    .main-redes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center
+    }
+    .main-contact-menu h1 {
+        padding: 0%;
+        font-size: 70px;
+        text-align: center;
+        text-shadow: #384E77;
+    }
+    .main-section-spotify{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: flex-end
+     
+    }
+    #event-header  h1 {
+    font-size: 30px;
+   
+    }
+
+    #header-bio {
+        grid-area: 'header';
+    }
+    .main-h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-sec-first {
+        display: flex;
+        justify-content: center;
+    }
+    #bio-header {
+        color: $color-primario;
+        font-size: 50px;
+        margin: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    #bio-body {
+        background-color: #384E77;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 3, 3fr;
+        grid-template-rows: 2, 3fr ;
+        
+    }
+    h2 {
+        color: $color-primario;
+        display: flex;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        grid-area: 'card';
+    }
+    .card-text {
+        padding: 10px;
+        color: $color-primario;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-content: last baseline;
+        grid-area: 'text';
+    }
+    .card-img-top {
+        
+        width: 200%;
+    }
+}
+
+@media (max-width: 576px) {
+    #body-index {
+        background-repeat: repeat-y;
+        text-align: center;
+    }
+    main {
+        li{
+            flex-direction: column;
+            justify-content: center;
+            align-content: flex-end;
+        }
+    }
+    .main-data {
+        font-size: 1000px;
+    }
+}

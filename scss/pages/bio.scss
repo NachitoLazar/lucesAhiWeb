@@ -1,0 +1,25 @@
+#main-bio  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 600px 600px;
+    grid-template-areas: 
+        'header' 'header' 
+        'main' 'footer'
+    ;
+    }
+    h2 {
+        color: $color-primario;
+    }
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+

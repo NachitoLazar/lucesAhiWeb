@@ -1,0 +1,31 @@
+$color-primario:#EAD94C ;
+
+@each $nombre-color, $color in $colores {
+    .title-#{nombre-$color}{
+        color: $color-primario
+    }
+}
+@mixin h1 ($size, $margin,$color){
+    .title{
+    font-size: 300px;
+    margin: 10px;
+    color: $color-primario;   
+    }
+
+}
+
+@include title ("primario", $color-primario);
+
+
+ // pages//
+ @import url(../scss/pages/bio.scss);
+ @import url(../scss/pages/contacto.scss);
+ @import url(../scss/pages/disco.scss);
+ @import url(../scss/pages/event.scss);
+ @import url(../scss/pages/index.scss);
+ @import url(../scss/pages/media.scss);
+
+ // boostrap //
+ @import url(../scss/bootstrap.css);
+
+
